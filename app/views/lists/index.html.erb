@@ -1,16 +1,17 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://media.cntraveller.com/photos/611bed6f24f18e2bd3cbe7b0/16:9/w_2580,c_limit/the-phoenix-cinema-finchley-london-conde-nast-traveller-24feb15-pr.jpg);">
   <div class="container">
     <h1>Lists of Movies</h1>
-    <p>Pick a list that takes your fancy</p>
+    <p>Pick a list that takes your fancy or make a new one</p>
   </div>
 </div>
-<div id="lists" class="mt-3">
+<div id="lists">
   <% @lists.each do |list| %>
     <%= render list %>
   <% end %>
 </div>
-<%= link_to "Create a new list", new_list_path(), class: "btn btn-flat mt-3" %>
-
+<div class="nav-centered">
+  <%= link_to "Create a new list", new_list_path(), class: "btn btn-flat" %>
+</div>
 <div class="footer">
   <div class="footer-links">
     <a href="#"><i class="fab fa-github"></i></a>

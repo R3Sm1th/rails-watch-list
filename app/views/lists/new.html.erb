@@ -1,18 +1,22 @@
 <div class="card-category col-12" style="background-color: black">
-  <div class="col-4">
+  <div class="col-6" style="text-align: center">
     <h1>Create a <strong> new </strong> list</h1>
   </div>
   <br>
-  <div class="col-3">
+  <div class="col-6">
     <%= simple_form_for @list do |f| %>
      <%= f.input :name %>
-     <%= f.submit class: 'btn btn-primary col-3' %>
+      <div class="center-submit">
+        <%= f.submit class: "btn btn-primary" %>
+      </div>
     <% end %>
-    <%= link_to "Back", lists_path(), class: "btn btn-flat col-3 mt-3" %>
   </div>
-
-
 </div>
+<br>
+<div class="nav-centered">
+  <%= link_to "Back", lists_path(), class: "btn btn-flat" %>
+</div>
+
 <div class="footer mt-3">
   <div class="footer-links">
     <a href="#"><i class="fab fa-github"></i></a>

@@ -39,3 +39,14 @@
   background: linear-gradient(#147EFF, #0F67DA);
   color: white;
 }
+
+.center-submit {
+  text-align: center;
+}
+
+.card-product .btn-delete {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
