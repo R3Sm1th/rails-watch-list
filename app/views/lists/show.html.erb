@@ -10,7 +10,7 @@
       <img src=<%= bookmark.movie.poster_url %> />
       <div class="card-product-infos">
         <h2><strong><%= bookmark.movie.title %></strong></h2>
-        <p><%= bookmark.movie.overview %> <i class="fa-solid fa-star"></i> <%= bookmark.movie.rating %></p>
+        <p class="bookmark-spacing"><%= bookmark.movie.overview %> <i class="fa-solid fa-star"></i> <%= bookmark.movie.rating %></p>
         <%= link_to "Delete", bookmark_path(bookmark), class: "btn btn-ghost btn-delete", data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
         <p><i class="fa-solid fa-quote-left"></i> <%=bookmark.comment %></p>
       </div>
